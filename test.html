@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <section id="carousel">
+            <div class="carousel" id="carousel">
+                <img src="ikmbesut.jpg" class="active" alt="Ikmbesut">
+                <img src="1.jpg" alt="Image 1">
+                <img src="2.jpg" alt="Image 2">
+                <img src="3.jpg" alt="Image 3">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ikm.html">IKM Information</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h1>Gallery</h1>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="1.jpg" alt="Activity 1">
+            </div>
+            <div class="gallery-item">
+                <img src="2.jpg" alt="Activity 2">
+            </div>
+            <div class="gallery-item">
+                <img src="3.jpg" alt="Activity 3">
+            </div>
+            <div class="gallery-item">
+                <img src="4.jpg" alt="Activity 4">
+            </div>
+            <div class="gallery-item">
+                <img src="5.jpg" alt="Activity 5">
+            </div>
+            <div class="gallery-item">
+                <img src="6.jpg" alt="Activity 6">
+            </div>
+            <div class="gallery-item">
+                <img src="7.jpg" alt="Activity 7">
+            </div>
+            <div class="gallery-item">
+                <img src="8.jpg" alt="Activity 8">
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox hidden">
+        <span class="close">&times;</span>
+        <img class="lightbox-image" src="" alt="Gallery Image">
+        <div class="navigation">
+            <button id="prev">❮</button>
+            <button id="next">❯</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+		<section id="carousel">
+    <div class="carousel" id="carousel">
+        <img src="ikmbesut.jpg" class="active" alt="Ikmbesut">
+        <img src="1.jpg" alt="Image 1">
+        <img src="2.jpg" alt="Image 2">
+		<img src="3.jpg" alt="Image 3">
+    </div>
+    </section>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ikm.html">IKM Information</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+		    </header>
+
+    <!-- Feedback Form -->
+    <section id="feedback">
+	<div class="blurred-box">
+        <h1>Feedback Form</h1>
+        <form action="process_feedback.php" method="POST" onsubmit="return validateForm()">
+            <label for="name">Name :</label>
+            <input type="text" id="name" name="name" required></br>
+            </br><label for="email">Email :</label>
+            <input type="email" id="email" name="email" required></br>
+			</br>        
+			<label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="">Select</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+			</select><br>
+			</br><label for="phone">Mobile No :</label>
+            <input type="phone" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{7}"></br>
+            </br><label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" required></textarea></br>
+            <input type="submit" value="Submit">
+        </form>
+		</div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
